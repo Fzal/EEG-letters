@@ -1,20 +1,10 @@
-#!/usr/bin/python3
-# inference.py
-# Xavier Vasques 13/04/2021
-
-
-import platform; print(platform.platform())
-import sys; print("Python", sys.version)
-import numpy; print("NumPy", numpy.__version__)
-import scipy; print("SciPy", scipy.__version__)
-
-import os
 import numpy as np
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.neural_network import MLPClassifier
 import pandas as pd
 from joblib import load
 from sklearn import preprocessing
+import os
 
 
 

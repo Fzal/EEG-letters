@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# tain.py
+# train.py
 # Xavier Vasques 13/04/2021
 
 import platform; print(platform.platform())
@@ -53,7 +53,7 @@ def train():
     clf_NN = MLPClassifier(solver='adam', activation='relu', alpha=0.0001, hidden_layer_sizes=(500,), random_state=0, max_iter=1000)
     clf_NN.fit(X_train, y_train)
        
-    # Secord model
+    # Record model
     from joblib import dump, load
     dump(clf_NN, MODEL_PATH_NN)
         
